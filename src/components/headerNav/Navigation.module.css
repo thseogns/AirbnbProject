@@ -53,12 +53,12 @@
   justify-content: flex-end;
   width: 86px;
   height: 48px;
-  border: 1px solid var(--color-userbutton-hover);
+  border: 1px solid var(--color-userButton-hover);
   border-radius: 50px;
   transition: all 0.3s;
 }
 .userButton:hover {
-  box-shadow: 0px 1px 3px 2px var(--color-userbutton-hover);
+  box-shadow: 0px 1px 3px 2px var(--color-userButton-hover);
 }
 .bugerImage,
 .userImage {
