@@ -64,12 +64,12 @@ a {
 }
 
 .focus button {
-  color: #6d6d6d;
+  color: var(--color-headerText-hover);
   width: 64px;
   height: 44px;
 }
 .focus a {
-  color: #6d6d6d;
+  color: var(--color-headerText-hover);
   display: block;
   text-align: center;
   line-height: 2.9;
@@ -81,7 +81,7 @@ a {
 .focus:hover a,
 .focus:hover button {
   border-radius: 50px;
-  background-color: #f7f7f7;
+  background-color: var(--color-button-hover);
   color: black;
 }
 span {
