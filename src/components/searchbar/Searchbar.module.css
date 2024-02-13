@@ -1,0 +1,12 @@
+.searchbarCover {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 850px;
+  height: 66px;
+  margin: auto;
+  border: 1px solid red;
+}
+.checkInAndOut {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

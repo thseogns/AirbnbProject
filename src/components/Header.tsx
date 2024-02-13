@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Header.module.css";
-import Navigation from "./Header/Navigation";
+import Navigation from "./header/Navigation";
+import Searchbar from "./searchbar/Searchbar";
 
 const Header = () => {
   return (
@@ -25,6 +26,7 @@ const Header = () => {
 
         <Navigation />
       </div>
+      <Searchbar />
     </div>
   );
 };

@@ -1,7 +1,23 @@
 .navbar {
+  width: 100%;
   display: flex;
+
   margin: auto;
 }
-.regist {
+.registCover {
+  width: 100%;
   display: flex;
+  justify-content: flex-end;
+}
+.regist {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.boxMargin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lineheight {
 }

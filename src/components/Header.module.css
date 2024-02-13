@@ -3,8 +3,13 @@
   margin: auto;
 }
 .header {
+  height: 80px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+.headerMargin::after {
+  width: 100%;
+  content: "";
 }
 .logoImage {
   margin: auto;
