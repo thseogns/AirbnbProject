@@ -6,7 +6,15 @@
   margin: auto;
   border: 1px solid red;
 }
+.travelDestination {
+}
 .checkInAndOut {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.traveler {
+  display: flex;
+}
+.guest {
+  width: 100%;
 }
