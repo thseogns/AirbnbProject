@@ -1,0 +1,15 @@
+.headerMargin {
+  width: 90%;
+  margin: auto;
+}
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.logoImage {
+  margin: auto;
+}
+.checkIn {
+  display: flex;
+  margin: auto;
+}
