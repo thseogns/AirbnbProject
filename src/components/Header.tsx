@@ -7,6 +7,7 @@ import ButtonComponent from "./ButtonComponent";
 
 import { useSelector, useDispatch } from "react-redux";
 import { display } from "../features/display/display";
+
 const Header = () => {
   const checkInDisplay = useSelector((state: RootState) => state.display.value);
   const dispatch = useDispatch();
