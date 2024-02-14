@@ -2,7 +2,7 @@ import React from "react";
 import type { RootState } from "../app/store";
 import styles from "./Header.module.css";
 import Navigation from "./headerNav/Navigation";
-import Searchbar from "./searchbar/Searchbar";
+import Searchbar from "./checkbar/Checkbar";
 import ButtonComponent from "./ButtonComponent";
 
 import { useSelector, useDispatch } from "react-redux";

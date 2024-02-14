@@ -6,7 +6,7 @@ export interface DisplayState {
 }
 
 const initialState: DisplayState = {
-  value: 0,
+  value: 1,
 };
 
 export const displaySlice = createSlice({
