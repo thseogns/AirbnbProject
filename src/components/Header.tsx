@@ -1,10 +1,22 @@
 import React from "react";
+import type { RootState } from "../app/store";
 import styles from "./Header.module.css";
 import Navigation from "./headerNav/Navigation";
 import Searchbar from "./searchbar/Searchbar";
 import ButtonComponent from "./ButtonComponent";
 
+import { useSelector, useDispatch } from "react-redux";
+import { display } from "../features/display/display";
 const Header = () => {
+  const checkInDisplay = useSelector((state: RootState) => state.display.value);
+  const dispatch = useDispatch();
+  const lodgingToggleHandler = () => {
+    dispatch(display(1));
+  };
+  const experienceToggleHandler = () => {
+    dispatch(display(2));
+  };
+  console.log(checkInDisplay);
   return (
     <div className={styles.headerMargin}>
       <div className={styles.header}>
@@ -16,14 +28,30 @@ const Header = () => {
         <div className={styles.position}>
           <div className={styles.checkInCover}>
             <div className={styles.checkIn}>
-              <div className={styles.lodging}>
+              <div className={styles.focus} onClick={lodgingToggleHandler}>
                 <ButtonComponent>
-                  <span>숙소</span>
+                  <span
+                    style={
+                      checkInDisplay === 1
+                        ? { color: "black", fontWeight: "bold" }
+                        : {}
+                    }
+                  >
+                    숙소
+                  </span>
                 </ButtonComponent>
               </div>
-              <div className={styles.focus}>
+              <div className={styles.focus} onClick={experienceToggleHandler}>
                 <ButtonComponent>
-                  <span>체험</span>
+                  <span
+                    style={
+                      checkInDisplay === 2
+                        ? { color: "black", fontWeight: "bold" }
+                        : {}
+                    }
+                  >
+                    체험
+                  </span>
                 </ButtonComponent>
               </div>
               <div className={styles.focus}>
