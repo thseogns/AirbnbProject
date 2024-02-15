@@ -4,7 +4,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
-import ClickMenu from "./components/clickMenu/ClickMenu";
+import Menubar from "./components/menubar/Menubar";
 import Main from "./components/main/Main";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
-        <ClickMenu />
+        <Menubar />
         <Routes>
           <Route path="/" element={<Main />}></Route>
           <Route path="/2"></Route>

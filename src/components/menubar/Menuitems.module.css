@@ -1,0 +1,27 @@
+.slideItems {
+}
+
+.slideItems ul {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: min-content;
+  list-style: none;
+  gap: 32px;
+}
+.itemCover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.slideItems ul li {
+  min-width: 56px;
+}
+.slideItems img {
+  width: 24px;
+  height: 24px;
+}
+.itemName {
+  font-size: 12px;
+  width: max-content;
+}

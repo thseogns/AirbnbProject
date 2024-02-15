@@ -7,15 +7,13 @@ const MenuItem = () => {
     <div className={styles.slideItems}>
       <ul>
         {arrayNames.map((name) => (
-          <li>
-            <Link to={name.image} key={name.image}>
-              <div>
+          <li key={name.image}>
+            <Link to={name.image}>
+              <div className={styles.itemCover}>
                 <img
                   src={`${process.env.PUBLIC_URL}/houseIcon/${name.image}.jpg`}
                 />
-              </div>
-              <div>
-                <span>{name.name}</span>
+                <span className={styles.itemName}>{name.name}</span>
               </div>
             </Link>
           </li>
