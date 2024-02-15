@@ -13,9 +13,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 8px;
 }
-.slideItems ul li {
+.slideItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 78px;
   min-width: 56px;
+  opacity: 0.6;
 }
 .slideItems img {
   width: 24px;
@@ -23,5 +29,41 @@
 }
 .itemName {
   font-size: 12px;
+
   width: max-content;
+  position: relative;
+}
+
+.itemName::after {
+  content: "";
+  display: block;
+
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  opacity: 0;
+  position: absolute;
+  bottom: -15px;
+}
+
+/*호버시 나타나는 색조정*/
+
+.slideItem:hover {
+  opacity: 1;
+}
+.slideItem:hover .itemName::after {
+  opacity: 0.3;
+}
+/*클릭시 나타나는 색조정*/
+.clickSlideItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 78px;
+  min-width: 56px;
+  opacity: 0.6;
+}
+.clickSlideItem,
+.clickSlideItem .itemName::after {
+  opacity: 1;
 }

@@ -2,15 +2,34 @@
   display: flex;
   width: 90%;
   margin: auto;
+  height: 78px;
+  align-items: center;
 }
 .scroll {
   margin: 0 15px;
   overflow: hidden;
 }
 .filterButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 82px;
   min-width: 82px;
   height: 48px;
-  border: 1px solid black;
+  border: 1.5px solid var(--color-filterBorder);
   border-radius: 12px;
+}
+.imageCover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.filterButton img {
+  width: 16px;
+  height: 16px;
+}
+.filterButton span {
+  font-size: 0.75rem;
+  line-height: 2;
 }

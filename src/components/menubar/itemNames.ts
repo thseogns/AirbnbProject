@@ -46,7 +46,6 @@ export const arrayNames = [
   { name: "동굴", image: "cave" },
   { name: "B&B", image: "bnb" },
   { name: "캠핑카", image: "campingcar" },
-  { name: "A자형 주택", image: "ashapedhouse" },
   { name: "골프장", image: "golfcourse" },
   { name: "Luxe", image: "luxe" },
   { name: "키클라데스 주택", image: "kikilradeshouse" },

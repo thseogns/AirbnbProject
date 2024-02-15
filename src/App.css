@@ -2,6 +2,7 @@
   --color-button-hover: #f7f7f7;
   --color-userButton-hover: #cecece;
   --color-headerText-hover: #6d6d6d;
+  --color-filterBorder: #dddddd;
 }
 * {
   padding: 0;

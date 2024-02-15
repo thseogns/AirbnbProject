@@ -9,7 +9,14 @@ const Menubar = () => {
           <MenuItems />
         </div>
       </div>
-      <div className={styles.filterButton}>왼</div>
+      <div className={styles.filterButton}>
+        <div className={styles.imageCover}>
+          <img src={process.env.PUBLIC_URL + "/filterIcon.png"} />
+        </div>
+        <div>
+          <span>필터</span>
+        </div>
+      </div>
     </div>
   );
 };

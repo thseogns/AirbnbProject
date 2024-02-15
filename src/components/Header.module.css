@@ -4,13 +4,15 @@ a {
 }
 
 .headerMargin {
-  width: 90%;
   margin: auto;
   position: sticky;
   height: 168px;
+  border-bottom: 1px solid var(--color-filterBorder);
 }
 .header {
+  width: 90%;
   height: 80px;
+  margin: auto;
   display: flex;
 }
 .headerMargin::after {
