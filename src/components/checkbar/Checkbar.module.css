@@ -16,6 +16,10 @@
 .travelDestination input {
   border: none;
 }
+
+.travelDestination input:focus {
+  outline: none;
+}
 .checkInAndOut {
   display: grid;
   grid-template-columns: 1fr 1fr;

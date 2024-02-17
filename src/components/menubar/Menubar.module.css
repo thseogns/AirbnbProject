@@ -8,6 +8,7 @@
 .scroll {
   margin: 0 15px;
   overflow: hidden;
+  position: relative;
 }
 .filterButton {
   display: flex;
@@ -32,4 +33,61 @@
 .filterButton span {
   font-size: 0.75rem;
   line-height: 2;
+}
+/*화살표*/
+
+.arrowButton {
+  display: flex;
+  z-index: 2;
+  position: absolute;
+
+  width: 68px;
+  height: 78px;
+}
+.arrowButton:nth-child(1) {
+  left: 0;
+}
+.arrowButton:nth-child(3) {
+  right: 0;
+  top: 0;
+  flex-direction: row-reverse;
+}
+.arrowButton::after {
+  content: "";
+  display: block;
+  z-index: -1;
+  width: 40px;
+  height: 100%;
+  pointer-events: none;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.arrowButton > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.arrowButton > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--color-headerText-hover);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.arrowButton:nth-child(3) > div > div {
+  transform: none;
+}
+.arrowButton img {
+  width: 7px;
+  height: 12px;
 }
