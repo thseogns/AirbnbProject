@@ -90,6 +90,7 @@
   border: 1px solid var(--color-headerText-hover);
   border-radius: 50%;
   transform: rotate(180deg);
+  cursor: pointer;
 }
 .arrowButton:nth-child(3) > div > div {
   transform: none;
