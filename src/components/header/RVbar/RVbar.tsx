@@ -1,13 +1,13 @@
 /** @jsxImportSource @emotion/react */
 import React from "react";
 import { css } from "@emotion/react";
-import { grid } from "../../emotion/grid";
+import { grid } from "../../../emotion/grid";
 import {
   flex,
   alignCenter,
   justifyCenter,
   flexColumn,
-} from "../../emotion/flex";
+} from "../../../emotion/flex";
 
 const RVbar = () => {
   const rvbarCover = css`

@@ -2,8 +2,8 @@
 import React from "react";
 import { css } from "@emotion/react";
 import styles from "./UserNavigation.module.css";
-import { flexCenter } from "../../emotion/flex";
-import { StaticButton, UserButton } from "../../emotion/components/Button";
+import { flexCenter } from "../../../emotion/flex";
+import { StaticButton, UserButton } from "../../../emotion/components/Button";
 const Navigation = () => {
   const UserNavbar = css`
     z-index: 2;

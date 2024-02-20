@@ -1,15 +1,16 @@
 /** @jsxImportSource @emotion/react */
 import React from "react";
 import { css } from "@emotion/react";
-import type { RootState } from "../../app/store";
+import type { RootState } from "../../../app/store";
 import { Link } from "react-router-dom";
-import { grid } from "../../emotion/grid";
-import { flexColumn, flexCenter } from "../../emotion/flex";
+import { grid } from "../../../emotion/grid";
+import { flexColumn, flexCenter } from "../../../emotion/flex";
 import { arrayNames } from "./itemNames";
 
 import styles from "./Menuitems.module.css";
 import { useSelector, useDispatch } from "react-redux";
-import { clickDisplay } from "../../features/display/display";
+import { clickDisplay } from "../../../features/display/display";
+
 const MenuItem = () => {
   const clickState = useSelector((state: RootState) => state.display.clickName);
   const dispatch = useDispatch();
@@ -25,10 +26,10 @@ const MenuItem = () => {
 
   return (
     <div>
-      <ul css={[grid, slideItems]}>
+      <div css={[grid, slideItems]}>
         {arrayNames.map((name) => (
-          <li
-            css={
+          <div
+            className={
               name.image === clickState
                 ? styles.clickSlideItem
                 : styles.slideItem
@@ -45,9 +46,9 @@ const MenuItem = () => {
                 <span className={styles.itemName}>{name.name}</span>
               </div>
             </Link>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

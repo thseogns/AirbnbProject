@@ -1,14 +1,14 @@
 /** @jsxImportSource @emotion/react */
 import React from "react";
 import { css } from "@emotion/react";
-import type { RootState } from "../../app/store";
+import type { RootState } from "../../../app/store";
 import RVbar from "../RVbar/RVbar";
 
-import { flexCenter } from "../../emotion/flex";
-import { RVButton } from "../../emotion/components/Button";
+import { flexCenter } from "../../../emotion/flex";
+import { RVButton } from "../../../emotion/components/Button";
 
 import { useSelector, useDispatch } from "react-redux";
-import { display } from "../../features/display/display";
+import { display } from "../../../features/display/display";
 const ReservationNav = () => {
   const checkInDisplay = useSelector((state: RootState) => state.display.value);
   const dispatch = useDispatch();
